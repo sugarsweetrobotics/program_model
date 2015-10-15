@@ -3,8 +3,6 @@ import 'dart:core';
 import 'lib/application.dart';
 
 void main() {
-  print("Hello World");
-
   Application app = new Application();
 
   app.statements.add(
@@ -81,4 +79,21 @@ void main() {
   );
 
   print (app.toPython(0));
+
+  ''' OUTPUT:
+
+a = 4 + 3
+if a == 7:
+  print 'Okay'
+else : 
+  print 'Invalid Calculation Result!'
+
+counter = 0
+while True:
+  print 'This is Loop'
+  counter = counter + 1
+  if counter == 5:
+    break
+
+  '''
 }
